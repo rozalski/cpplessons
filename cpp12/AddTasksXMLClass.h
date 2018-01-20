@@ -7,10 +7,18 @@
 
 class AddTasksXML
 {
+
+
 public:
+//struct oneTask{
+//    char inputPath[255];
+//    char outputPath[255];
+//    int lid;
+//};
 
     std::vector<std::string> getTasks();
     void setTask();
+
 
 
 
