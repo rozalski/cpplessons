@@ -31,6 +31,7 @@ void TTasks::getTasks()
     {
         std::cout<<it->inPath<<"  "<<it->outPath<<"  "<<it->lid<<"\n";
     }
+    std::cout << vec_singlTask.size(); // проверка размерности вектора
 }
 
 
