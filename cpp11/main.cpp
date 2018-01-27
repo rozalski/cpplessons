@@ -17,7 +17,7 @@ void display(char* str)
 }
 void intdisplay(int* num){
 
-        cout << num << endl;
+        cout << (int*)num << endl;
 }
 
 
