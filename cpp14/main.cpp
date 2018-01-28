@@ -1,16 +1,24 @@
-#include <GL/freeglut.h>
-#include <time.h>
-#include <
+#include <SFML/Graphics.hpp>
 
-#define WIDTH 80
-#define HEIGHT 45
+int main()
+{
+    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+    sf::CircleShape shape(100.f);
+    shape.setFillColor(sf::Color::Green);
 
-int main (int argc, char ** argv){
-    settings.init();
-    food.spawn();
-    srand(time(NULL));
-    glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_RGB);
+    while (window.isOpen())
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                window.close();
+        }
 
+        window.clear();
+        window.draw(shape);
+        window.display();
+    }
 
+    return 0;
 }
