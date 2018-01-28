@@ -1,9 +1,16 @@
-#include <iostream>
+#include <GL/freeglut.h>
+#include <time.h>
+#include <
 
-using namespace std;
+#define WIDTH 80
+#define HEIGHT 45
 
-int main()
-{
-    cout << "Hello world!" << endl;
-    return 0;
+int main (int argc, char ** argv){
+    settings.init();
+    food.spawn();
+    srand(time(NULL));
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_RGB);
+
+
 }
