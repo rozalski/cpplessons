@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale( LC_ALL,"" );
+    int c_files;
+    cout << "count files: ";
+    cin >> c_files;
+    if(c_files==0){
+        return 0;
+    }
+
+     if (c_files % 10 == 1 && (c_files < 10 || c_files > 20)) {
+            cout << "פאיכ" << endl;
+        } else
+        if ((c_files % 10 > 1 && c_files < 5) || (c_files > 20 && c_files % 10 > 1 && c_files % 10 < 5 )) {
+            cout << "פאיכא"<< endl;
+        } else {
+            cout << "פאיכמג"<< endl;
+        }
+    main();
+
+
+}
