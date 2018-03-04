@@ -29,6 +29,11 @@ int main()
     cout << "Передаем в функцию 2 инта" << endl;
     int x = 5, y = 7;
     swapfunc(x,y);
+    char z ='r';
+    int c = 70;
+    cout << "Передаем в функцию 2 разных типа" << endl;
+    swapfunc<char, int>(z,c);
+    cout << "И получили хуйню ))) это получается потому что инт приводится к чар и наоборот " << endl;
 
 
     vector<int> vec_int;

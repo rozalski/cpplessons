@@ -74,7 +74,7 @@ Player p("bart.png", 50, 0, 21, 40);//создаем объект p класса
     Sprite herosprite;
     herosprite.setTexture(herotexture);
     herosprite.setTextureRect(IntRect(50,0,21,40));
-    herosprite.setPosition(50, 25);
+    herosprite.setPosition(50, 250);
     float curentFrame = 1;
     Clock clock;
 
